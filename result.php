@@ -35,8 +35,9 @@ include 'func.php';
     th:nth-child(7),
     th:nth-child(8),
     th:nth-child(9) {
-    background-color: #d4edda; /* 薄い緑の背景色 */}
-    
+        background-color: #d4edda; /* 薄い緑の背景色 */
+    }
+
     th:nth-child(1), td:nth-child(1) { width: 50px; } /* No */
     th:nth-child(2), td:nth-child(2) { width: 150px; } /* 回答日時 */
     th:nth-child(3), td:nth-child(3) { width: 120px; } /* 名前 */
@@ -44,13 +45,13 @@ include 'func.php';
     th:nth-child(5), td:nth-child(5) { width: 200px; } /* 質問1 */
     th:nth-child(6), td:nth-child(6) { width: 200px; } /* 質問2 */
     th:nth-child(7), td:nth-child(7) { width: 200px; } /* 質問3 */
-    th:nth-child(8), td:nth-child(8) { width: 200px; } /* 質問4 */
-    th:nth-child(9), td:nth-child(9) { width: 200px; } /* 質問5 */
+    th:nth-child(8), td:nth-child(8) { width: 120px; } /* 質問4 */
+    th:nth-child(9), td:nth-child(9) { width: 120px; } /* 質問5 */
 
 </style>
 <body>
     <h1>アンケート結果</h1>
-    <h3>xxx</h3>
+    <h3>回答一覧表</h3>
     <?php
     $file = fopen('data/data.txt', 'r'); // ファイルを開く
 
@@ -86,6 +87,7 @@ include 'func.php';
 
     ?>
     <ul>
+    <li><a href="graph.php">結果（質問4,5）をグラフで確認する</a></li>
     <li><a href="survey.php">アンケートに答える</a></li>
     <li><a href="home.php">ホームに戻る</a></li>
     </ul>

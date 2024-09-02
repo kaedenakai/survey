@@ -13,8 +13,12 @@
 		質問1 <input type="text" name="q1"><br>
 		質問2 <input type="text" name="q2"><br>
 		質問3 <input type="text" name="q3"><br>
-		質問4 <input type="text" name="q4"><br>
-		質問5 <input type="text" name="q5"><br>
+		質問4<br>
+        <label><input type="radio" name="q4" value="はい"> はい</label>
+        <label><input type="radio" name="q4" value="いいえ"> いいえ</label><br>
+        質問5<br>
+        <label><input type="radio" name="q5" value="はい"> はい</label>
+        <label><input type="radio" name="q5" value="いいえ"> いいえ</label><br>
 		<input type="submit" value="送信">
 	</form>
 	<ul>
