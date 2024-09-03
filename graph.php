@@ -78,9 +78,9 @@ function createPieChart(ctx, label, data) {
 
 // 質問4の円グラフを描画
 createPieChart(
-    document.getElementById('chartQ4').getContext('2d'),
-    '質問4',
-    [<?php echo $q4_yes; ?>, <?php echo $q4_no; ?>]
+    document.getElementById('chartQ4').getContext('2d'), //ctx
+    '質問4', //label
+    [<?php echo $q4_yes; ?>, <?php echo $q4_no; ?>] //dataの配列
 );
 
 // 質問5の円グラフを描画
